@@ -1,0 +1,111 @@
+/** DONATE FORM STYLES **/
+.form{
+	max-width: 300px;
+	margin:0 auto;
+	font-size:14px;
+	color:grey;
+	position:relative;
+}
+.form__fieldset{
+	padding:30px 20px 20px;
+	position:relative;
+	border:1px solid $grey;
+	margin:0;
+}
+.input{
+	box-sizing: border-box;
+	border-radius: 3px;
+	border:1px solid $grey;
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	padding:7px;
+	margin-top: 15px;
+}
+.input--label{
+	margin-bottom:5px;
+}
+.input--textarea{
+	margin-bottom:60px;
+	font-family:Helvetica, Arial, sans-serif;
+}
+.input--half{
+	width:47%;
+	display:inline-block;
+	padding:20px 5px;
+}
+.input--submit{
+	background: limegreen;
+	margin-left:6%;
+	border:none;
+	color:#fff;
+	cursor:pointer;
+	font-size:16px;
+	-webkit-transition:background .2s ease-in-out;
+	transition:background .2s ease-in-out;
+}
+.input--submit:hover{
+	background:green;
+}
+.form__label{
+	color:grey;
+	margin-bottom:15px;
+	display:block;
+	font-size:11px;
+}
+.form__hightlight{
+	color:$red;
+	font-weight:bold;
+}
+.form__total{
+	position:absolute;
+	top:0;
+	height:13px;
+	width:0;
+	display:block;
+	background-color:$red;
+	left:0;
+	-webkit-transition:width .8s ease-in-out;
+	transition:width .8s ease-in-out;
+}
+.form__progress{
+	background-color:$darkgrey;
+	color:#fff;
+	padding:20px;
+	box-sizing:border-box;
+	border-radius:5px;
+	margin-bottom:8px;
+	position:relative;
+}
+.form__progress::after{
+	content:'';
+	width:10px;
+	height:10px;
+	-webkit-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	background-color:$darkgrey;
+	display:block;
+	position:absolute;
+	bottom:-5px;
+	right:20px;
+}
+.help-link{
+	margin-top:8px;
+	color:turquoise;
+	font-style:italic;
+	display:block;
+}
+
+/** PARSLEY STYLES **/
+.parsley-error{
+	background-color:$error;
+}
+.parsley-errors-list{
+	margin-top:8px;
+	margin-bottom:5px;
+	list-style-type:none;
+	padding:0;
+	font-size:12px;
+	color:$red;
+}
